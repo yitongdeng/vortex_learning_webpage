@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Vortex_ICLR</title>
+
+    <meta name="description" content="Vortex_ICLR">
+    <meta name="keywords" content="Vortex_ICLR">
+    <meta name="author" content="Vortex_ICLR">
+
+    <link rel="icon" type="image/png" href="../../img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=59d19899587930b4db9dc12c8b8586882cf35efb">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/combined.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+
+    <!-- END: Styles -->
+</head>
+
+<style>
+    .myFont {
+        font-family: 'Times New Roman', Times, serif; 
+        font-variant: small-caps;
+    }
+
+    .myFont2 {
+        font-family: 'Times New Roman', Times, serif; 
+    }
+
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<body>
+    <div class="nk-main">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="bg-white">
+					<div class="col-md-12 column" style="margin-top: 0px; text-align: center" >
+                        <h1> <span class = "myFont">
+                            Learning Vortex Dynamics for Fluid <br>
+                            Inference and Prediction
+                        </h1>
+                        <div class="col-md-12 column" style="margin-top: 2px; margin-bottom: 12px">
+                            <h4><span class = "myFont2">ICLR 2023</span></h4>
+                        </div>
+                        <div class="col-md-12 column" style="margin-top: 2px; margin-bottom: 12px">
+                            <span class = "myFont2">
+                                <h6><a href="https://yitongdeng.github.io/">Yitong Deng</a><sup>1,2</sup>, <a href="https://kovenyu.com/">Hong-Xing Yu</a><sup>2</sup>, <a href="https://jiajunwu.com/">Jiajun Wu</a><sup>2</sup>, and <a href="https://cs.dartmouth.edu/~bozhu/">Bo Zhu</a><sup>1</sup></h6>
+                            </span>
+                            <div style="line-height:65%;">
+                                <br>
+                            </div>
+                            <h6><span class = "myFont2"><sup>1</sup> Dartmouth College;  <sup>2</sup> Stanford University</span></a></h6>
+                        </div> 
+                    </div>
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 12px">
+                        <h5><span class = "myFont">Abstract</span></h5>
+                    </div> 
+                    <div class="col-md-12 column">
+                        <p>
+                            <span class = "myFont2">
+                                We propose a novel machine learning method based on differentiable vortex particles 
+                                to infer and predict fluid dynamics from a single video. The key design of
+                                our system is a particle-based latent space to encapsulate the <em>hidden</em>, Lagrangian
+                                vortical evolution underpinning the <em>observable</em>, Eulerian flow phenomena. We devise a 
+                                novel differentiable vortex particle system in conjunction with their learnable, 
+                                vortex-to-velocity dynamics mapping to effectively capture and represent
+                                the complex flow features in a reduced space. We further design an end-to-end
+                                training pipeline to directly learn and synthesize simulators from data, that can
+                                reliably deliver future video rollouts based on limited observation. The value of
+                                our method is twofold: first, our learned simulator enables the inference of hidden
+                                physics quantities (<em>e.g.</em> velocity field) purely from visual observation, to be used
+                                for motion analysis; secondly, it also supports future prediction, constructing the
+                                input video's <em>sequel</em> along with its future dynamics evolution. We demonstrate
+                                our method's efficacy by comparing quantitatively and qualitatively with a range
+                                of existing methods on both synthetic and real-world videos, displaying improved
+                                data correspondence, visual plausibility, and physical integrity.                           
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-12 column" style="margin-top: 0px;">
+                        <h5><span class = "myFont">Paper</span></h5>
+                        <!-- <button type="submit" onclick="window.open('assets/documents/melp_paper.pdf')"> PDF </button> -->
+                        <div style="line-height:19%;">
+                            <br>
+                        </div>
+                        [<a href="https://yitongdeng.github.io/assets/paper/Neural_Vortex_Particles.pdf">PDF</a>]
+                    </div>
+
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 14px">
+                        <h5><span class = "myFont">Video</span></h5>
+                    </div>                       
+
+                    <div class="col-md-12 column" style="margin-top: 12px">
+                    	<style>
+                    		.videoWrapper {
+							  position: relative;
+							  padding-bottom: 56.25%;
+							  /* 16:9 */
+							  padding-top: 10px;
+							  height: 0;
+							}
+
+							.videoWrapper iframe {
+							  position: absolute;
+							  top: 0;
+							  left: 0;
+							  width: 100%;
+							  height: 100%;
+							}
+					    </style>
+                    	<div class="videoWrapper">
+  							<iframe src="https://www.youtube.com/embed/R2RIS-k50so" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+                    </div>                          
+                     
+
+                    <div class="col-md-12 column"><h6></h6></div> 
+                    <div class="col-md-12 column" style="margin-top: 10px">
+                        <h5><span class = "myFont">Citation coming soon...</span></h5>
+                    <!-- <div class="col-md-12 column">
+                        <div class="courier ">
+@article{Deng2022MELP,<br>
+    &nbsp;title={A Moving Eulerian-Lagrangian Particle Method for Thin Film and Foam
+    Simulation}, <br>
+    &nbsp;author={Y. Deng and M. Wang and X. Kong and S. Xiong and Z. Xian and B. Zhu},<br>
+    &nbsp;journal={ACM Trans. Graph.},<br>
+    &nbsp;volume={41},<br>
+    &nbsp;number={4},<br>
+    &nbsp;article={154},<br>
+    &nbsp;year={2022}<br>
+}
+                        </div>
+                    </div>                      
+                </div>           
+            </div>        
+        </div> -->
+            <br><br><br><br><br>
+
+
+                </div>           
+            </div>        
+        </div>
+
+      
+
+		<div class="nk-gap-4"></div>
+	</div>
+    <footer class="nk-footer">
+
+
+        <div class="nk-footer-cont">
+            <div class="container text-xs-center">
+
+                <div class="nk-footer-text">
+                    <p>Copyright &copy Yitong Deng</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+
+
+    <!-- START: Scripts -->
+
+    <script src="assets/js/combined.js"></script>
+    
+    <!-- END: Scripts -->
+
+
+</body>
+
+</html>
