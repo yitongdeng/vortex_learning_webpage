@@ -84,22 +84,8 @@
                     <div class="col-md-12 column">
                         <p>
                             <span class = "myFont2">
-                                We propose a novel machine learning method based on differentiable vortex particles 
-                                to infer and predict fluid dynamics from a single video. The key design of
-                                our system is a particle-based latent space to encapsulate the <em>hidden</em>, Lagrangian
-                                vortical evolution underpinning the <em>observable</em>, Eulerian flow phenomena. We devise a 
-                                novel differentiable vortex particle system in conjunction with their learnable, 
-                                vortex-to-velocity dynamics mapping to effectively capture and represent
-                                the complex flow features in a reduced space. We further design an end-to-end
-                                training pipeline to directly learn and synthesize simulators from data, that can
-                                reliably deliver future video rollouts based on limited observation. The value of
-                                our method is twofold: first, our learned simulator enables the inference of hidden
-                                physics quantities (<em>e.g.</em>, velocity field) purely from visual observation, to be used
-                                for motion analysis; secondly, it also supports future prediction, constructing the
-                                input video's <em>sequel</em> along with its future dynamics evolution. We demonstrate
-                                our method's efficacy by comparing quantitatively and qualitatively with a range
-                                of existing methods on both synthetic and real-world videos, displaying improved
-                                data correspondence, visual plausibility, and physical integrity.                           
+                                We propose a novel <em>differentiable vortex particle</em> (DVP) method to infer and predict fluid dynamics from a single video. Lying at its core is a particle-based latent space to encapsulate the <em>hidden</em>, Lagrangian vortical evolution underpinning the <em>observable</em>, Eulerian flow phenomena. Our <em>differentiable vortex particles</em> are coupled with a learnable, vortex-to-velocity dynamics mapping to effectively capture the complex flow features in a physically-constrained, low-dimensional space. This representation facilitates the learning of a fluid simulator tailored to the input video that can deliver robust, long-term future predictions.
+The value of our method is twofold: first, our learned simulator enables the inference of hidden physics quantities (<em>e.g.</em>, velocity field) purely from visual observation; secondly, it also supports future prediction, constructing the input video's <em>sequel</em> along with its future dynamics evolution. We compare our method with a range of existing methods on both synthetic and real-world videos, demonstrating improved reconstruction quality, visual plausibility, and physical integrity.                           
                             </span>
                         </p>
                     </div>
